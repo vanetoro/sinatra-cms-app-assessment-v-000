@@ -58,7 +58,7 @@ DEPENDENCIES
   bcrypt
   pry
   rake
-  require_all (~> 2.0)
+  require_all
   shotgun
   sinatra-activerecord
   sqlite3
