@@ -9,4 +9,9 @@ class HostController < ApplicationController
 
   erb :'/hosts/signup'
   end
+
+  get '/events/:slug' do
+  # @host = Host. find_by_slug(params[:slug])
+  erb :'/host/events'
+  end
 end
