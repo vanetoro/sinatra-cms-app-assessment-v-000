@@ -1,6 +1,6 @@
 require './config/environment'
 
 use Rack::MethodOverride
-use UserController
+use HostController
 use EventController
 run ApplicationController
