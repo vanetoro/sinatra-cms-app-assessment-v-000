@@ -5,4 +5,6 @@ class EventController < ApplicationController
    erb :'/events/create_event'
  end
 
+
+
 end

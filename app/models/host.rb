@@ -3,10 +3,10 @@ class Host < ActiveRecord::Base
   has_secure_password
 
   def slug
-    Self.split(' ').join('-').downcase
+    self.username.split(' ').join('-').downcase
   end
 
-  def Self.find_by_slug(host)
-    Host.all.detect{|h| h.downcase == host.username}
+  def Host.find_by_slug(host)
+    Host.all.detect{|h| h.slug == host}
   end
 end
