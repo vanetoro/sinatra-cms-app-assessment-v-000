@@ -14,4 +14,9 @@ class HostController < ApplicationController
   # @host = Host. find_by_slug(params[:slug])
   erb :'/host/events'
   end
+
+  post '/users/:slug' do
+    @host = Host.find_by_slug(params[:slug])
+
+  end
 end
